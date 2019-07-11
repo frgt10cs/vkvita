@@ -194,8 +194,12 @@ function CreateEncryptButton(){
     encrypter.textContent="Encrypt";  
     var row =  SetToRow(encrypter, function(){
         if(keyChooser.value!=-1){
-            var crypted = cryptico.encrypt(messageTextBox.textContent, cryptico.publicKeyString(currentKeys.RSA));
-            messageTextBox.textContent = (currentPrefixSend==""?defaultPrefixSend:currentPrefixSend)+" -m "+crypted.cipher+" -k "+keyChooser.value;            
+            var message = messageTextBox.textContent;
+            if(isRus){
+                message=encodeURI(message);
+            }  
+            var crypted = cryptico.encrypt(message, cryptico.publicKeyString(currentKeys.RSA));
+            messageTextBox.textContent = (currentPrefixSend==""?defaultPrefixSend:currentPrefixSend)+" -m "+crypted.cipher+" -k "+keyChooser.value +(isRus?" -r":"");            
         }
         else{
             LogWrite("Choose keys for encryption");

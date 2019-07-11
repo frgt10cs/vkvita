@@ -72,8 +72,7 @@ function TurnOnGui(){
     UploadSelData();        
 }
 
-function DecryptMessages(){      
-    console.log("Decrypting");    
+function DecryptMessages(){           
     var mesDivs = messageBox.getElementsByClassName("im-mess--text");     
     for(var i=0; i<mesDivs.length;i++){       
         if(mesDivs[i].classList.contains("vita-checked")){            
@@ -83,8 +82,7 @@ function DecryptMessages(){
             ExecuteMessage(mesDivs[i].textContent, mesDivs[i]); 
         }              
         mesDivs[i].classList.add("vita-checked");                      
-    }       
-    console.log(mesDivs.length);
+    }           
 }
 
 var alphabit = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
