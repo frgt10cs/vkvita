@@ -46,7 +46,7 @@ function CreateMainPanel(){
     logger = CreateLogBox();
     checker = CreteKeysChecker();
     logger.style.height="auto"; 
-    actions = [checker,askKeysButton,sender, encrypter, decrypter, russer];   
+    actions = [askKeysButton,checker, decrypter, encrypter, sender, russer];   
     settings = [keyChooserRow,prefixSendSetterRow, prefixRecieveSetterRow, saver, logger];
     actionPanel.appendChild(actionHider);
     for(var i=0;i<actions.length;i++){
@@ -225,7 +225,7 @@ function CreateRussianPicker(){
     togler.classList="_ui_toggler ui_toggler";
     var label = document.createElement("div");
     label.classList="ui_toggler_label";
-    label.textContent="Russian symbols";
+    label.textContent="Cyrillic symbols";
     russer.appendChild(togler);
     russer.appendChild(label);    
     var row = SetToRow(russer, function(){

@@ -13,7 +13,7 @@ var messageBox;
 var opened=false;
 
 setInterval(() => {
-    if(IsInDialog()){
+    if(IsInDialog() && opened){
         DecryptMessages();
     }
 }, 3000);
@@ -73,16 +73,18 @@ function TurnOnGui(){
 }
 
 function DecryptMessages(){      
+    console.log("Decrypting");    
     var mesDivs = messageBox.getElementsByClassName("im-mess--text");     
     for(var i=0; i<mesDivs.length;i++){       
         if(mesDivs[i].classList.contains("vita-checked")){            
-            return;                               
+            continue;                               
         }                  
         if(IsEncrypted(mesDivs[i].textContent)){
             ExecuteMessage(mesDivs[i].textContent, mesDivs[i]); 
         }              
         mesDivs[i].classList.add("vita-checked");                      
-    }          
+    }       
+    console.log(mesDivs.length);
 }
 
 var alphabit = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
