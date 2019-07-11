@@ -23,9 +23,9 @@ Open dialog on vk.com
 
 Use ```ctrl+m``` to show/hide extension panel
 
-Also you can hide any panel by press on its title
+Also you can hide any panel by pressing on its title
 
-### Exchange keys
+### Keys exchanging
 
 First person press ```ask keys``` to  send request to second person for exchange keys.
 
@@ -39,7 +39,7 @@ Write something in Vk textbox
 
 Select key in ```Settings panel``` which will be used to ecnrypt message
 
-If your message contains russian symbols turn on ```Russian symbols``` in ```Action panel```. It will correctly encrypt your message
+If your message contains Cyrillic symbols turn on ```Cyrillic symbols``` in ```Action panel```. It will correctly encrypt your message
 
 Press ```Send encrypted``` in ```Action panel```
 
@@ -49,11 +49,11 @@ In ```Settings panel``` you can see two textboxes
 
 They contain prefixes
 
-Extension use prefixes to detect or mark encrypted messages
+Extension uses prefixes to detect or mark encrypted messages
 
-Default prefix for mark message is ```vita```
+Default marking prefix is ```vita```
 
-Default prefixes for detect message is ```vita``` and ```VITA``` 
+Default prefixes for message detecting are ```vita``` and ```VITA``` 
 
 You can use some prefixes for detect message. Just use ```;``` to separate
 
