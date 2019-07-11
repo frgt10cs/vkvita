@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Vk Vita",
+	"description": "Safe messenging",
+	"version": "1.0.0",
+	"icons": {"128": "128.png"},
+	"browser_action": {
+		"default_icon": "512.png"		
+	},
+	"permissions": ["activeTab"],
+	"content_scripts":[
+		{
+			"matches": ["https://vk.com/*"],
+			"js": ["jquery.js","Uploader.js","Panels.js","cryptico.js","jsbn.js","random.js","hash.js","rsa.js","aes.js","api.js","script.js"]
+		}
+	]	
+}
