@@ -1,6 +1,8 @@
 # Vk Vita
 
-Safe messaging in vk
+Safe messaging in Vk
+
+Extension allows to exchange encrypted messages in VK
 
 ## Installing
 
