@@ -61,9 +61,14 @@ You can use some prefixes for detect message. Just use ```;``` to separate
 
 If you want to edit, write new prefixes and  press ```Save prefixes``` in ```Settings panel``` to save changes
 
+### Another functions
+
+* Button ```Encrypt``` on ```Action panel``` encrypts message in vk textbox
+* Button ```Decrypt``` on ```Action panel``` calls function ```Decrypt messages``` which scans all messages and decrypts them
+
 ## Problems with decryption
 
-If you can`t decrypt message then you and your conversationalist have different keys
+If you can't decrypt message then you and your conversationalist have different keys
 
 ### Fix problems with different keys
 
@@ -75,10 +80,6 @@ First person press ```Check keys```
 
 Result will be written in ```Log```
 
-### Another functions
-
-* Button ```Encrypt``` on ```Action panel``` encrypts message in vk textbox
-* Button ```Decrypt``` on ```Action panel``` calls function ```Decrypt messages``` which scans all messages and decrypts them
 
 ## Errors
 
