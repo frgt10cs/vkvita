@@ -23,7 +23,7 @@ Click the ```Load temporary add-on```
 
 Open dialog on vk.com
 
-Use ```ctrl+m``` to show/hide extension panel
+Use ```alt+m``` to show/hide extension panel
 
 Also you can hide any panel by pressing on its title
 
@@ -34,6 +34,8 @@ First person press ```ask keys``` to  send request to second person for exchange
 Then second person press ```Send keys``` to generate keys and send to frist person.
 
 First person press ```Set keys```
+
+Every time when you change dialog you need to press ```Upload keys```
 
 ### Sending encrypted messages
 
