@@ -19,7 +19,7 @@ setInterval(() => {
 }, 3000);
 
 document.onkeydown = function(k){
-    if(k.ctrlKey && k.which==77){
+    if(k.altKey && k.which==77){
         OpenExt();        
     }                
 }
@@ -32,11 +32,7 @@ function IsInDialog(){
 
 function OpenExt(){    
     if (IsInDialog()) {   
-        if(!opened){
-            currentSelId = GetSelId();                       
-            messageTextBox = document.querySelectorAll('*[id^="im_editable"]')[0];
-            messageSendButton =  document.getElementsByClassName("im-send-btn")[1];
-            messageBox = document.getElementsByClassName("im-page-history-w")[0];        
+        if(!opened){            
             TurnOnGui();                        
             DecryptMessages();
         }

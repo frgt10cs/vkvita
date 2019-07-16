@@ -19,6 +19,7 @@ var settingsHider;
 var isActionHidded=false;
 var isSettingsHidded=false;
 var checker;
+var updater;
 
 var isRus=false;
 
@@ -45,9 +46,10 @@ function CreateMainPanel(){
     russer = CreateRussianPicker();
     logger = CreateLogBox();
     checker = CreteKeysChecker();
+    updater = CreateUpdater();
     logger.style.height="auto"; 
     actions = [askKeysButton,checker, decrypter, encrypter, sender, russer];   
-    settings = [keyChooserRow,prefixSendSetterRow, prefixRecieveSetterRow, saver, logger];
+    settings = [updater,keyChooserRow,prefixSendSetterRow, prefixRecieveSetterRow, saver, logger];
     actionPanel.appendChild(actionHider);
     for(var i=0;i<actions.length;i++){
         actionPanel.appendChild(actions[i]);
@@ -256,6 +258,15 @@ function CreateLogBox(){
     logger.readOnly="readonly";
     loggerInput=logger;
     var row = SetToRow(logger,function(){},true);
+    return row;
+}
+
+function CreateUpdater(){
+    var updater = document.createElement("span");
+    updater.textContent = "Upload keys";
+    var row = SetToRow(updater, function(){              
+        UploadSelData(); 
+    });
     return row;
 }
 

@@ -1,4 +1,8 @@
 function UploadSelData(){    
+    currentSelId = GetSelId();                       
+    messageTextBox = document.querySelectorAll('*[id^="im_editable"]')[0];
+    messageSendButton =  document.getElementsByClassName("im-send-btn")[1];
+    messageBox = document.getElementsByClassName("im-page-history-w")[0];        
     UpdateKeys();
     UploadPrefixes();
     UploadStaticKeys();    
