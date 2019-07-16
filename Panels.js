@@ -228,7 +228,7 @@ function CreateRussianPicker(){
     russer.style.paddingLeft="0px";
     russer.style.paddingTop="7px";
     var togler = document.createElement("div");
-    togler.classList="_ui_toggler ui_toggler";
+    togler.classList=isRus?"_ui_toggler ui_toggler  on":"_ui_toggler ui_toggler";
     var label = document.createElement("div");
     label.classList="ui_toggler_label";
     label.textContent="Cyrillic symbols";
