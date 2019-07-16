@@ -23,7 +23,7 @@ Click the ```Load temporary add-on```
 
 Open dialog on vk.com
 
-Use ```alt+m``` to show/hide extension panel
+Use ```alt+m``` to show/hide extension panel (extension works only when it is not hidden)
 
 Also you can hide any panel by pressing on its title
 
