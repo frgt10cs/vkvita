@@ -1,8 +1,11 @@
 # Vk Vita
 
-Safe messaging in Vk
+Browser extension allows to exchange encrypted messages in VK
 
-Extension allows to exchange encrypted messages in VK
+### Extension's panels
+
+![v1](https://user-images.githubusercontent.com/37965385/79687336-46cba580-824f-11ea-9969-8f7e5a2c3a3c.png)
+
 
 ## Installing
 
