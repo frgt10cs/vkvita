@@ -4,7 +4,7 @@ Browser extension allows to exchange encrypted messages in VK
 
 ### Extension's panels
 
-![v1](https://user-images.githubusercontent.com/37965385/79687336-46cba580-824f-11ea-9969-8f7e5a2c3a3c.png)
+![aa](https://user-images.githubusercontent.com/37965385/81509039-95310900-9310-11ea-99fc-b9a9c00fa86e.png)
 
 
 ## Installing
